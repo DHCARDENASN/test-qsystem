@@ -40,22 +40,23 @@ public class PersonaService {
     }
 
     public List<Persona> getListOrder(List<Persona> listPersona,Integer order){
+        System.out.println("");
         List<Persona> personasOrdenadas = null;
         switch (order){
             case Constantes.ORDER_BY_DNI:
-                System.out.println("Ordenando por DNI..");
+                System.out.println("Ordenando por DNI: ");
                  personasOrdenadas = listPersona.stream()
                         .sorted((p1, p2) -> p1.getDni().compareTo(p2.getDni()))
                         .collect(Collectors.toList());
                 break;
             case Constantes.ORDER_BY_APPATERNO:
-                System.out.println("Ordenando por apellido paterno..");
+                System.out.println("Ordenando por apellido paterno: ");
                 personasOrdenadas = listPersona.stream()
                         .sorted((p1, p2) -> p1.getAppPaterno().compareTo(p2.getAppPaterno()))
                         .collect(Collectors.toList());
                 break;
             default:
-                System.out.println("Lista desordenada..");
+                System.out.println("Lista desordenada:");
                 personasOrdenadas = listPersona;
                 break;
         }

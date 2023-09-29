@@ -24,7 +24,8 @@ public class App
     }
 
     public static void primerEjercicio(){
-        System.out.println("PRIMER EJERCICIO..");
+        System.out.println("************************************** PRIMER EJERCICIO **************************************");
+        System.out.println("respondiendo la pregunta 1");
         //se implementa el servicio
         PersonaService personaService = new PersonaService();
 
@@ -42,7 +43,9 @@ public class App
     }
 
     public static void segundoEjercicio(){
-        System.out.println("SEGUNDO EJERCICIO..");
+        System.out.println("");
+        System.out.println("************************************** SEGUNDO EJERCICIO **************************************");
+        System.out.println("respondiendo la pregunta 2");
         //se implementa el servicio
         CentroDistribucionService centroDistribucionService = new CentroDistribucionService();
 
@@ -54,7 +57,9 @@ public class App
     }
 
     public static void tercerEjercicio(){
-        System.out.println("TERCER EJERCICIO..");
+        System.out.println("");
+        System.out.println("************************************** TERCER EJERCICIO **************************************");
+        System.out.println("respondiendo la pregunta 3");
         //se obtienen los servicios
         Comportamiento1Service comportaimento1Service = new Comportamiento1Service();
         Comportamiento2Service comportaimento2Service = new Comportamiento2Service();
