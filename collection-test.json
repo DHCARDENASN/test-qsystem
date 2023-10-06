@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "61f9b67f-bd01-4401-90dd-0690eebda2c9",
+		"name": "test-qsystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16563806"
+	},
+	"item": [
+		{
+			"name": "primer-ejercicio",
+			"item": [
+				{
+					"name": "AgregarPersona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"65432566\",\r\n    \"appPaterno\": \"Quispe\",\r\n    \"appMatterno\": \"Contreras\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/primerejercicio/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"primerejercicio",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaDesordenada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/primerejercicio/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"primerejercicio",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaOrdenadaDNI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/primerejercicio/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"primerejercicio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListaOrdenadaApePaterno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/primerejercicio/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"primerejercicio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "segundo-ejercicio",
+			"item": [
+				{
+					"name": "AgregarCentroDistribucion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"HUANUCO\",\r\n    \"descripcion\": \"Huanuco es la ciudad de la eterna primavera.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/segundoejercicio/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"segundoejercicio",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerDescripcionCentroDistribucion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/segundoejercicio/TRUJILLO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"segundoejercicio",
+								"TRUJILLO"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
